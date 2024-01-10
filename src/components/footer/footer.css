@@ -1,0 +1,35 @@
+.footer-root {
+  width: 100%;
+  background-color: #5b5b5b;
+  text-align: center;
+}
+
+.footer-cont {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+}
+
+.footer-row1 {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9em;
+  font-family: pun;
+}
+
+img {
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+  opacity: 1;
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.footer-glow:hover {
+  color: aliceblue;
+}
