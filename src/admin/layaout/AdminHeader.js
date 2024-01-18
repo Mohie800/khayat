@@ -9,27 +9,25 @@ import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 import { useDataFetching } from "../../store";
-import XIcon from "@mui/icons-material/X";
-import { Instagram } from "@mui/icons-material";
-import { Tooltip } from "@mui/material";
 
 const drawerWidth = 240;
 const navItems = [
-  { name: "الرئيسية", link: "/" },
-  { name: "طلب جديد", link: "/order" },
-  { name: "اتصل بنا", link: "/contacts" },
-  { name: "الشكاوى والتعديل", link: "/complains" },
-  { name: "التوظيف", link: "/employment" },
+  { name: "إدارة الطلبات", link: "/admin/orders" },
+  { name: "السجل التجاري", link: "/admin/register" },
+  { name: "التسجيل الضريبي", link: "/admin/tax" },
+  { name: "الخدمات", link: "/admin/services" },
+  { name: "المدن", link: "/admin/city" },
+  { name: "الشعار والتصميم", link: "/admin/logo" },
+  { name: "التوظيف", link: "/admin/employment" },
+  { name: "الشكاوى والتعديل", link: "/admin/support" },
 ];
 
-function Header() {
+function AdminHeader() {
   // const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const { data } = useDataFetching();
@@ -122,10 +120,10 @@ function Header() {
           >
             <Box
               sx={{
+                width: "70vw",
                 display: "flex",
                 justifyContent: "center",
                 cursor: "pointer",
-                width: "70vw",
               }}
               onClick={() => navigate("/")}
             >
@@ -148,37 +146,6 @@ function Header() {
             onClick={() => navigate("/")}
           >
             <img src={data.logo?.url} alt="logo" />
-          </Box>
-          <Box
-            sx={{
-              display: { xs: "flex", sm: "flex" },
-              alignItems: "center",
-              justifyContent: "center",
-              flexDirection: { xs: "column", sm: "row" },
-              gap: 1,
-              fontFamily: "pun",
-            }}
-          >
-            <Tooltip title="تابعنا على منصة X" arrow>
-              <XIcon
-                sx={{
-                  color: "#999",
-                  fontSize: "1.2rem",
-                  cursor: "pointer",
-                  ":hover": { color: "black" },
-                }}
-              />
-            </Tooltip>
-            <Tooltip title="تابعنا على instagram" arrow>
-              <Instagram
-                sx={{
-                  color: "#999",
-                  fontSize: "1.2rem",
-                  cursor: "pointer",
-                  ":hover": { color: "black" },
-                }}
-              />
-            </Tooltip>
           </Box>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
@@ -222,7 +189,7 @@ function Header() {
   );
 }
 
-Header.propTypes = {
+AdminHeader.propTypes = {
   /**
    * Injected by the documentation to work in an iframe.
    * You won't need it on your project.
@@ -230,4 +197,4 @@ Header.propTypes = {
   window: PropTypes.func,
 };
 
-export default Header;
+export default AdminHeader;

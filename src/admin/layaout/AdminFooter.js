@@ -1,18 +1,18 @@
-import "./footer.css";
 import pay from "../../assets/pay.png";
 import { Box } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import { useDataFetching } from "../../store";
+import { useRegisterStore, useTaxStore } from "../../store";
 
 const Footer = () => {
   const navigate = useNavigate();
-  const { data } = useDataFetching();
+  const { reg } = useRegisterStore();
+  const { tax } = useTaxStore();
   return (
     <div className="footer-root">
       <div className="footer-cont">
         <div className="footer-row1" style={{ marginInline: 20 }}>
-          رقم السجل التجاري ({data.reg.number}) رقم التسجيل الضريبي (
-          {data.tax.number}) شهادة توثيق التجارة الالكترونية ({data.reg.authNo})
+          رقم السجل التجاري ({reg.number}) رقم التسجيل الضريبي ({tax.number})
+          شهادة توثيق التجارة الالكترونية ({reg.authNo})
           <img src={pay} alt="pay" style={{ width: 400 }} />
         </div>
         <div className="footer-row1">
@@ -41,11 +41,7 @@ const Footer = () => {
                 >
                   شروط الأستخدام
                 </div>
-                <div
-                  id="menu-item-453"
-                  className="footer-btn"
-                  onClick={() => navigate("/tax-certificate")}
-                >
+                <div id="menu-item-453" className="menu-item-453">
                   الشهادة الضريبية
                 </div>
                 <div
