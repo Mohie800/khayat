@@ -1,7 +1,5 @@
-import { useEffect, useState } from "react";
-import Header from "../header/Header";
+import { useCallback, useEffect, useState } from "react";
 import Features from "../order/Features";
-import Footer from "../footer/Footer";
 import { Checkbox, Grid } from "@mui/material";
 import { Circle, CircleOutlined } from "@mui/icons-material";
 import "./home.css";
@@ -9,7 +7,6 @@ import Services from "./Services";
 import img1 from "../../assets/callus.png";
 import img3 from "../../assets/Untitled design (1).png";
 import img2 from "../../assets/Untitled design (2).png";
-import img4 from "../../assets/footer.png";
 import { useNavigate } from "react-router-dom";
 import { useDataFetching } from "../../store";
 
@@ -34,18 +31,18 @@ const Home = () => {
     });
   };
 
-  const switchImage = () => {
+  const switchImage = useCallback(() => {
     if (currentImage < images.length - 1) {
       setCurrentImage(currentImage + 1);
     } else {
       setCurrentImage(0);
     }
-  };
+  }, [currentImage, images]);
 
   useEffect(() => {
     const interval = setInterval(switchImage, 6000);
     return () => clearInterval(interval);
-  }, [currentImage]);
+  }, [switchImage]);
 
   return (
     <div className="home-root">
@@ -101,7 +98,11 @@ const Home = () => {
 
       <Features />
       <div className="home-footer">
-        <img src={img4} alt="footer" className="home-footer-img" />
+        <img
+          src={data.logo?.homePic}
+          alt="footer"
+          className="home-footer-img"
+        />
       </div>
       {/* <Footer /> */}
     </div>
