@@ -174,7 +174,7 @@ const NewSupport = () => {
       </Box>
       {loading ? (
         <div style={{ textAlign: "center" }}>
-          <CircularProgress sx={{ color: "#315e5e" }} />
+          <CircularProgress sx={{ color: "#0D1786" }} />
         </div>
       ) : (
         <RenderOrders />

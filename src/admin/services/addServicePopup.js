@@ -108,7 +108,7 @@ export default function AddServicePopup({ open, setOpen, update }) {
           }}
         >
           <Typography
-            sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1, mt: 2 }}
+            sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1, mt: 2 }}
           >
             عنوان الخدمة
           </Typography>
@@ -118,7 +118,7 @@ export default function AddServicePopup({ open, setOpen, update }) {
             error={!title && required}
           />
           <Typography
-            sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1, mt: 2 }}
+            sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1, mt: 2 }}
           >
             الوصف
           </Typography>
@@ -128,7 +128,7 @@ export default function AddServicePopup({ open, setOpen, update }) {
             error={!description && required}
           />
           <Typography
-            sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1, mt: 2 }}
+            sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1, mt: 2 }}
           >
             التفاصيل
           </Typography>
@@ -150,7 +150,7 @@ export default function AddServicePopup({ open, setOpen, update }) {
             </IconButton>
             {file ? (
               <Typography
-                sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+                sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
                 className="text2 t201 bold"
                 style={{ textAlign: "center" }}
               >
@@ -158,7 +158,7 @@ export default function AddServicePopup({ open, setOpen, update }) {
               </Typography>
             ) : (
               <Typography
-                sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+                sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
               >
                 قم برفع صورة
               </Typography>
@@ -190,7 +190,7 @@ export default function AddServicePopup({ open, setOpen, update }) {
               marginTop: "10px",
               marginLeft: "10px",
               // width: "10vw",
-              bgcolor: "#315e5e",
+              bgcolor: "#0D1786",
               fontFamily: "pun",
             }}
             onClick={handleAdd}

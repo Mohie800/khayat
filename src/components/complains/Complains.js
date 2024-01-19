@@ -201,9 +201,9 @@ const Complains = () => {
         variant="contained"
         fullWidth
         sx={{
-          bgcolor: "#315e5e",
+          bgcolor: "#0D1786",
           ":hover": {
-            bgcolor: "#457878",
+            bgcolor: "#001b91",
           },
         }}
         onClick={sendOrder}

@@ -70,7 +70,7 @@ const Register = () => {
     >
       {loading ? (
         <div style={{ textAlign: "center" }}>
-          <CircularProgress sx={{ color: "#315e5e" }} />
+          <CircularProgress sx={{ color: "#0D1786" }} />
         </div>
       ) : (
         <>
@@ -78,7 +78,7 @@ const Register = () => {
             <div className="order-text1">بيانات السجل التجاري</div>
           </div>
           <Typography
-            sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+            sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
           >
             رقم السجل التجاري
           </Typography>
@@ -87,7 +87,7 @@ const Register = () => {
             onChange={(e) => setNumber(e.target.value)}
           />
           <Typography
-            sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+            sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
           >
             رقم شهادة التوثيق الإلكتروني
           </Typography>
@@ -108,7 +108,7 @@ const Register = () => {
             </IconButton>
             {file ? (
               <Typography
-                sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+                sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
                 className="text2 t201 bold"
                 style={{ textAlign: "center" }}
               >
@@ -116,7 +116,7 @@ const Register = () => {
               </Typography>
             ) : (
               <Typography
-                sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+                sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
               >
                 قم برفع صورة
               </Typography>
@@ -125,7 +125,7 @@ const Register = () => {
           <Button
             variant="contained"
             sx={{
-              bgcolor: "#315e5e",
+              bgcolor: "#0D1786",
               fontFamily: "pun",
               paddingInline: 4,
               width: "max-content",

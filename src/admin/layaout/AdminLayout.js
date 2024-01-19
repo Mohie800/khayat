@@ -65,7 +65,7 @@ const AdminLayout = ({ el }) => {
           style={{
             width: "100%",
             textAlign: "center",
-            color: "#315e5e",
+            color: "#0D1786",
             height: "100%",
           }}
         >

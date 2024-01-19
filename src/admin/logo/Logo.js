@@ -1,4 +1,4 @@
-import { Box, Button, Container, Divider } from "@mui/material";
+import { Box, Button, Container, Divider, Grid } from "@mui/material";
 import { useDataFetching } from "../../store";
 import { useEffect, useState } from "react";
 import HomeBanner from "./HomeBanner";
@@ -8,6 +8,7 @@ import DeletePopup from "./DeletePopup";
 const Logo = () => {
   const { data, loading, error, fetchData } = useDataFetching();
   const [addLogo, setAddLogo] = useState(false);
+  const [addTail, setAddTail] = useState(false);
   const [addHomeBanner, setaddHomeBanner] = useState(false);
   const [addOrderBanner, setAddOrderBanner] = useState(false);
   const [deleteHomeBanner, setDeleteHomeBanner] = useState(false);
@@ -29,20 +30,74 @@ const Logo = () => {
       </div>
       {!loading && (
         <>
-          <div className="order-text1" style={{ color: "#1f1f1f" }}>
-            الشعار
-          </div>
-          <Box sx={{ maxWidth: 200 }}>
-            <img src={data.logo?.url} alt="logo" />
-            <Button
-              variant="contained"
-              color="warning"
-              sx={{ mt: 2, fontFamily: "pun-bold" }}
-              onClick={() => setAddLogo(true)}
-            >
-              تعديل الشعار
-            </Button>
-          </Box>
+          <Grid
+            container
+            spacing={1}
+            direction="row"
+            justifyContent="flex-start"
+            alignItems="flex-start"
+            alignContent="stretch"
+            wrap="wrap"
+          >
+            <Grid item xs={12} sm={6}>
+              <div className="order-text1" style={{ color: "#1f1f1f" }}>
+                الشعار
+              </div>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  width: "auto",
+                  mt: 2,
+                }}
+              >
+                <img
+                  src={data.logo?.url}
+                  alt="logo"
+                  style={{ height: 150, width: "fit-content" }}
+                />
+                <div>
+                  <Button
+                    variant="contained"
+                    color="warning"
+                    sx={{ mt: 2, fontFamily: "pun-bold" }}
+                    onClick={() => setAddLogo(true)}
+                  >
+                    تعديل الشعار
+                  </Button>
+                </div>
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <div className="order-text1" style={{ color: "#1f1f1f" }}>
+                تصميم ذيل الصفحة الرئيسية
+              </div>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  width: "auto",
+                  mt: 2,
+                }}
+              >
+                <img
+                  src={data.logo?.homePic}
+                  alt="logo"
+                  style={{ height: 150, width: "fit-content" }}
+                />
+                <div>
+                  <Button
+                    variant="contained"
+                    color="warning"
+                    sx={{ mt: 2, fontFamily: "pun-bold" }}
+                    onClick={() => setAddTail(true)}
+                  >
+                    تعديل الصورة
+                  </Button>
+                </div>
+              </Box>
+            </Grid>
+          </Grid>
           <Divider />
           <div
             className="order-text1"
@@ -106,6 +161,14 @@ const Logo = () => {
         setOpen={setAddLogo}
         title="تعديل الشعار"
         url="/logo/update"
+        update={fetchData}
+        id={data.logo?._id}
+      />
+      <AddServicePopup
+        open={addTail}
+        setOpen={setAddTail}
+        title="تعديل ذيل الصفحة الرئيسية"
+        url="/logo/update-home-pic"
         update={fetchData}
         id={data.logo?._id}
       />

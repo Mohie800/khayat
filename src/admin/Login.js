@@ -50,7 +50,7 @@ const Login = () => {
         }}
       >
         <Typography
-          sx={{ fontFamily: "pun-bold", color: "#315e5e", marginBlock: 1 }}
+          sx={{ fontFamily: "pun-bold", color: "#0D1786", marginBlock: 1 }}
         >
           اسم المستخدم
         </Typography>
@@ -58,7 +58,7 @@ const Login = () => {
         <Typography
           sx={{
             fontFamily: "pun-bold",
-            color: "#315e5e",
+            color: "#0D1786",
             marginBlock: 1,
             mt: 3,
           }}
@@ -73,7 +73,7 @@ const Login = () => {
         <LoadingButton
           variant="contained"
           sx={{
-            bgcolor: "#315e5e",
+            bgcolor: "#0D1786",
             fontFamily: "pun",
             paddingInline: 4,
             width: "max-content",

@@ -58,7 +58,7 @@ const Services = () => {
       </div>
       {loading ? (
         <div style={{ textAlign: "center" }}>
-          <CircularProgress sx={{ color: "#315e5e" }} />
+          <CircularProgress sx={{ color: "#0D1786" }} />
         </div>
       ) : (
         <ServicesData data={data} handleRemove={handleRemove} />
@@ -66,7 +66,7 @@ const Services = () => {
       <Button
         variant="contained"
         sx={{
-          bgcolor: "#315e5e",
+          bgcolor: "#0D1786",
           fontFamily: "pun",
           paddingInline: 4,
           width: "max-content",

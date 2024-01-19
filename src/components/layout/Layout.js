@@ -22,7 +22,7 @@ const Layout = ({ el }) => {
     >
       {loading ? (
         <div style={{ width: "100%", textAlign: "center" }}>
-          <CircularProgress sx={{ color: "#315e5e" }} />
+          <CircularProgress sx={{ color: "#0D1786" }} />
         </div>
       ) : (
         <>

@@ -14,38 +14,38 @@ const TermsAndConditions = () => {
       <div className="order-sec2">
         <div className="order-text1">شروط الأستخدام</div>
       </div>
-      <Typography sx={{ fontFamily: "pun-bold", color: "#315e5e", mt: 3 }}>
+      <Typography sx={{ fontFamily: "pun-bold", color: "#0D1786", mt: 3 }}>
         نحن نتأكد من أن لدينا سياسة خصوصية لمساعدتنا في التسويق لك ، مع حمايتك
         بكل طريقة ممكنة. فيما يلي الإجابات على بعض الأسئلة التي قد تجدها مفيدة.
         إذا كنت مهتمًا بأي شيء في سياسة الخصوصية الخاصة بنا ، فيرجى إخبارنا
         بذلك. لا يوجد شيء أكثر أهمية بالنسبة لنا من ثقتك بنا ورضاك في منتجاتنا
         وخدماتنا.
       </Typography>
-      <Typography sx={{ fontFamily: "pun-bold", color: "#315e5e", mt: 3 }}>
+      <Typography sx={{ fontFamily: "pun-bold", color: "#0D1786", mt: 3 }}>
         ما هي المعلومات التي نقوم بجمعها؟
       </Typography>
-      <Typography sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}>
+      <Typography sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}>
         نقوم بجمع المعلومات منك عند التسجيل على موقعنا أو تقديم طلب ،
       </Typography>
-      <Typography sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}>
+      <Typography sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}>
         عند الطلب أو التسجيل على موقعنا ، حسب الاقتضاء ، قد يُطلب منك إدخال اسمك
         أو عنوان بريدك الإلكتروني أو عنوانك البريدي أو رقم هاتفك أو معلومات
         بطاقة الائتمان الخاصة بك.
       </Typography>
-      <Typography sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}>
+      <Typography sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}>
         تستخدم المنصات الاعلانية بصفتها مورِّدًا خارجيًا ، ملفات تعريف الارتباط
         لعرض الإعلانات لك
       </Typography>
-      <Typography sx={{ fontFamily: "pun-bold", color: "#315e5e", mt: 3 }}>
+      <Typography sx={{ fontFamily: "pun-bold", color: "#0D1786", mt: 3 }}>
         في ماذا نستخدم المعلومات الخاصة بك؟
       </Typography>
-      <Typography sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}>
+      <Typography sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}>
         يمكن استخدام أي من المعلومات التي نجمعها منك بإحدى الطرق التالية:
       </Typography>
       <ul>
         <li>
           <Typography
-            sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+            sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
           >
             لتخصيص تجربتك – (تساعدنا معلوماتك على الاستجابة بشكل أفضل لاحتياجاتك
             الفردية).
@@ -53,7 +53,7 @@ const TermsAndConditions = () => {
         </li>
         <li>
           <Typography
-            sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+            sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
           >
             لتخصيص تجربتك – (تساعدنا معلوماتك على الاستجابة بشكل أفضل لاحتياجاتك
             الفردية).
@@ -61,7 +61,7 @@ const TermsAndConditions = () => {
         </li>
         <li>
           <Typography
-            sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+            sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
           >
             لتحسين موقعنا على الإنترنت – (نسعى باستمرار لتحسين عروض موقعنا على
             أساس المعلومات والتعليقات التي نتلقاها منك.
@@ -69,7 +69,7 @@ const TermsAndConditions = () => {
         </li>
         <li>
           <Typography
-            sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+            sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
           >
             لتحسين خدمة العملاء – (تساعدنا معلوماتك على الاستجابة بشكل أكثر
             فعالية لطلبات خدمة العملاء واحتياجات الدعم).
@@ -77,7 +77,7 @@ const TermsAndConditions = () => {
         </li>
         <li>
           <Typography
-            sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+            sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
           >
             لمعالجة المعاملات (لن يتم بيع معلوماتك ، سواء كانت عامة أو خاصة ، أو
             تبادلها ، أو نقلها ، أو منحها إلى أي شركة أخرى لأي سبب من الأسباب ،
@@ -87,7 +87,7 @@ const TermsAndConditions = () => {
         </li>
         <li>
           <Typography
-            sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+            sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
           >
             لإرسال رسائل بريد إلكتروني أو رسائل جوال دورية – (سيتم استخدام عنوان
             البريد الإلكتروني أو رقم جوالك الذي تقدمه لمعالجة الطلب فقط لإرسال
@@ -96,7 +96,7 @@ const TermsAndConditions = () => {
         </li>
         <li>
           <Typography
-            sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+            sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
           >
             لن يتم تخزين أي من بيانات البطاقات الائتمانية وبطاقات الخصم المباشر
             بالإضافة إلى المعلومات الشخصية أو بيعها أو مشاركتها أو تأجيرها إلى
@@ -105,7 +105,7 @@ const TermsAndConditions = () => {
         </li>
         <li>
           <Typography
-            sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+            sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
           >
             قد يتم تغيير السياسات والشروط والأحكام الخاصة بالموقع الإلكتروني أو
             تحديثها من وقت لآخر وذلك حتّى يتم استيفاء جميع المعايير القياسية
@@ -117,7 +117,7 @@ const TermsAndConditions = () => {
         </li>
         <li>
           <Typography
-            sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+            sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
           >
             بعض من الإعلانات التي تراها على الموقع يتم اختيارها وتقديمها من قبل
             أطراف خارجية مثل الشبكات ووكالات الإعلانات والمُعلنين الأفراد
@@ -132,10 +132,10 @@ const TermsAndConditions = () => {
           </Typography>
         </li>
       </ul>
-      <Typography sx={{ fontFamily: "pun-bold", color: "#315e5e", mt: 3 }}>
+      <Typography sx={{ fontFamily: "pun-bold", color: "#0D1786", mt: 3 }}>
         كوكيز:
       </Typography>
-      <Typography sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}>
+      <Typography sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}>
         نستخدم أداة جمع البيانات المعروفه باسم “ملفات تعريف الارتباط كوكيز” في
         مراحل معينة من استخدام موقعنا الإلكتروني. “ملفات تعريف الارتباط كوكيز”
         هي ملفات صغيرة موجودة على القرص الثابت لجهازك المحمول / الكمبيوتر /
@@ -148,10 +148,10 @@ const TermsAndConditions = () => {
         جهازك. يمكنك اختيار تعطيل ميزة “ملف تعريف الارتباط” على جهازك. ولكن هذا
         قد يمنع الاستفادة الكاملة من الخدمات التي يقدمها الموقع.
       </Typography>
-      <Typography sx={{ fontFamily: "pun-bold", color: "#315e5e", mt: 3 }}>
+      <Typography sx={{ fontFamily: "pun-bold", color: "#0D1786", mt: 3 }}>
         الكشف عن معلوماتك لأطراف ثالثة:
       </Typography>
-      <Typography sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}>
+      <Typography sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}>
         نحن لا نبيع أو نتاجر أو ننقل معلوماتك الشخصية إلى أطراف خارجية. لا يشمل
         هذا الجهات الخارجية الموثوقة التي تساعدنا في تشغيل موقعنا الإلكتروني ،
         أو إجراء أعمالنا ، أو خدمتكم ، طالما أن تلك الأطراف توافق على الحفاظ على

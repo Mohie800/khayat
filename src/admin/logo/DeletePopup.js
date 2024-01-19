@@ -84,7 +84,7 @@ export default function DeletePopup({ open, setOpen, update, url, title, id }) {
           <Typography
             sx={{
               fontFamily: "pun-bold",
-              color: "#315e5e",
+              color: "#0D1786",
               marginBlock: 1,
               mt: 2,
             }}
@@ -120,7 +120,7 @@ export default function DeletePopup({ open, setOpen, update, url, title, id }) {
               marginTop: "10px",
               marginLeft: "10px",
               // width: "10vw",
-              //   bgcolor: "#315e5e",
+              //   bgcolor: "#0D1786",
               fontFamily: "pun",
             }}
             onClick={handleAdd}

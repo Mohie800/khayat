@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="footer-row1" style={{ marginInline: 20 }}>
           رقم السجل التجاري ({data.reg.number}) رقم التسجيل الضريبي (
           {data.tax.number}) شهادة توثيق التجارة الالكترونية ({data.reg.authNo})
-          <img src={pay} alt="pay" style={{ width: 400 }} />
+          <img src={pay} alt="pay" style={{ height: 40 }} />
         </div>
         <div className="footer-row1">
           <div className="footer-primary pull-left" style={{}}>
@@ -83,7 +83,7 @@ const Footer = () => {
               className="copyright-footer"
               style={{ ":hover": { color: "#1f1f1f" }, marginBottom: 20 }}
             >
-              Copyright 2024 ©<strong>alkhayalksa</strong>
+              Copyright 2024 ©<strong>khabna</strong>
             </div>
           </div>
         </div>

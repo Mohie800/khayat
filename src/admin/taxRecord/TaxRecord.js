@@ -108,7 +108,7 @@ const TaxRecord = () => {
     >
       {loading ? (
         <div style={{ textAlign: "center" }}>
-          <CircularProgress sx={{ color: "#315e5e" }} />
+          <CircularProgress sx={{ color: "#0D1786" }} />
         </div>
       ) : (
         <>
@@ -116,7 +116,7 @@ const TaxRecord = () => {
             <div className="order-text1">بيانات التسجيل الضريبي</div>
           </div>
           <Typography
-            sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+            sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
           >
             رقم التسجيل الضريبي
           </Typography>
@@ -137,7 +137,7 @@ const TaxRecord = () => {
             </IconButton>
             {file ? (
               <Typography
-                sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+                sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
                 className="text2 t201 bold"
                 style={{ textAlign: "center" }}
               >
@@ -145,7 +145,7 @@ const TaxRecord = () => {
               </Typography>
             ) : (
               <Typography
-                sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+                sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
               >
                 قم برفع الصورة الأولى
               </Typography>
@@ -164,7 +164,7 @@ const TaxRecord = () => {
             </IconButton>
             {file1 ? (
               <Typography
-                sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+                sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
                 className="text2 t201 bold"
                 style={{ textAlign: "center" }}
               >
@@ -172,7 +172,7 @@ const TaxRecord = () => {
               </Typography>
             ) : (
               <Typography
-                sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+                sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
               >
                 قم برفع الصورة الثانية
               </Typography>
@@ -181,7 +181,7 @@ const TaxRecord = () => {
           <Button
             variant="contained"
             sx={{
-              bgcolor: "#315e5e",
+              bgcolor: "#0D1786",
               fontFamily: "pun",
               paddingInline: 4,
               width: "max-content",

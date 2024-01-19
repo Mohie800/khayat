@@ -32,8 +32,8 @@ const Order = () => {
     setCity(event.target.value);
   };
   // const images = [
-  //   "https://alkhayalksa.net/wp-content/uploads/2023/12/Banner-V01-1400x788.png",
-  //   "https://alkhayalksa.net/wp-content/uploads/2023/12/Alkhayal-Banner-V02-1400x788.png",
+  //   "https://khabna.com/wp-content/uploads/2023/12/Banner-V01-1400x788.png",
+  //   "https://khabna.com/wp-content/uploads/2023/12/Alkhayal-Banner-V02-1400x788.png",
   // ];
 
   const images = data.orderBanner.map((item) => item.url);
@@ -212,9 +212,9 @@ const Order = () => {
             variant="contained"
             fullWidth
             sx={{
-              bgcolor: "#315e5e",
+              bgcolor: "#0D1786",
               ":hover": {
-                bgcolor: "#457878",
+                bgcolor: "#001b91",
               },
             }}
             onClick={sendOrder}

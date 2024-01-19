@@ -1,7 +1,9 @@
 import { Box, Container, Typography } from "@mui/material";
 import whatsapp from "../../assets/WhatsApp_icon-1-100x100.png";
+import { useDataFetching } from "../../store";
 
 const Contacts = () => {
+  const { data } = useDataFetching();
   return (
     <Container
       sx={{
@@ -12,44 +14,44 @@ const Contacts = () => {
         mb: 10,
       }}
     >
-      <Typography sx={{ fontFamily: "pun-bold", color: "#315e5e", mt: 5 }}>
+      <Typography sx={{ fontFamily: "pun-bold", color: "#0D1786", mt: 5 }}>
         العنوان:
       </Typography>
       <div>
         <Typography
-          sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 0.5 }}
+          sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 0.5 }}
         >
-          شركة الخيال الماهر للخياطة
+          شركة خبنه للخياطة
         </Typography>
         <Typography
-          sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 0.5 }}
+          sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 0.5 }}
         >
-          سجل تجاري رقم 1010857681
+          سجل تجاري رقم {data.reg?.number}
         </Typography>
       </div>
       <div>
         <Typography
-          sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 0.5 }}
+          sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 0.5 }}
         >
           6549 وادي الشعراء – حي العليا
         </Typography>
         <Typography
-          sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 0.5 }}
+          sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 0.5 }}
         >
           وحدة رقم 222
         </Typography>
         <Typography
-          sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 0.5 }}
+          sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 0.5 }}
         >
           الرياض 12211 – 3805
         </Typography>
         <Typography
-          sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 0.5 }}
+          sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 0.5 }}
         >
           المملكة العربية السعودية
         </Typography>
       </div>
-      <Typography sx={{ fontFamily: "pun-bold", color: "#315e5e" }}>
+      <Typography sx={{ fontFamily: "pun-bold", color: "#0D1786" }}>
         الاستفسارات والشكاوى:
       </Typography>
       <div>
@@ -64,7 +66,7 @@ const Contacts = () => {
         </Box>
 
         <Typography
-          sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 0.5 }}
+          sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 0.5 }}
         >
           من 8ص إلى 5م – السبت إلى الخميس
         </Typography>

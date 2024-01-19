@@ -16,16 +16,16 @@ const Delivery = () => {
       <ul>
         <li>
           <Typography
-            sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+            sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
           >
-            التوصيل و الخدمة مجانية لجميع المدن التي تقع ضمن نطاق تغطية الخيال
+            التوصيل و الخدمة مجانية لجميع المدن التي تقع ضمن نطاق تغطية خبنه
             والتي أعلن عن تضمينها في الخدمات المجانية في المملكة العربية
             السعودية
           </Typography>
         </li>
         <li>
           <Typography
-            sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+            sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
           >
             في حال كان العميل خارج نطاق التغطية، لا نقوم بالخدمة ويتحمل العميل
             تكلفة الشحن حسب الوسيلة المناسبة له. وفي حال عدم الاتفاق على الشحن
@@ -35,7 +35,7 @@ const Delivery = () => {
         </li>
         <li>
           <Typography
-            sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+            sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
           >
             عادة يتم التوصيل والخدمة خلال يوم إلى 14 يوم عمل حسب الجدول المتاح
             للخدمة، وبالنسبة لطلبات الشحن يتم شحنها خلال 3 أيام مع الاتفاق مع
@@ -44,7 +44,7 @@ const Delivery = () => {
         </li>
         <li>
           <Typography
-            sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+            sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
           >
             التيتم التواصل مع العملاء خلال يوم إلى 7 أيام عمل لجدولة مواعيد
             الخدمة
@@ -52,9 +52,9 @@ const Delivery = () => {
         </li>
         <li>
           <Typography
-            sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+            sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
           >
-            الخيال لن يتعامل أو يقدّم خدمات أو منتجات لأي من الدول التي عليها
+            خبنه لن يتعامل أو يقدّم خدمات أو منتجات لأي من الدول التي عليها
             عقوبات من مكتب مراقبة الأصول الأجنبية (OFAC) وذلك وفقاً للقوانين
             المعمول بها في المملكة العربية السعودية.
           </Typography>

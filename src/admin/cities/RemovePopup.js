@@ -75,7 +75,7 @@ export default function RemovePopup({ open, setOpen, update, city }) {
           }}
         >
           <Typography
-            sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+            sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
           >
             هل تريد حذف مدينة {city.name} ؟
           </Typography>
@@ -105,7 +105,7 @@ export default function RemovePopup({ open, setOpen, update, city }) {
               marginTop: "10px",
               marginLeft: "10px",
               // width: "10vw",
-              //   bgcolor: "#315e5e",
+              //   bgcolor: "#0D1786",
               fontFamily: "pun",
             }}
             onClick={handleAdd}

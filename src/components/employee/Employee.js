@@ -333,7 +333,7 @@ const Employee = () => {
         </IconButton>
         {file ? (
           <Typography
-            sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+            sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
             className="text2 t201 bold"
             style={{ textAlign: "center" }}
           >
@@ -341,7 +341,7 @@ const Employee = () => {
           </Typography>
         ) : (
           <Typography
-            sx={{ fontFamily: "pun", color: "#315e5e", marginBlock: 1 }}
+            sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
           >
             يرجى إرفاق صورة من ملف السيرة الذاتية (اختياري)
           </Typography>
@@ -352,9 +352,9 @@ const Employee = () => {
         variant="contained"
         fullWidth
         sx={{
-          bgcolor: "#315e5e",
+          bgcolor: "#0D1786",
           ":hover": {
-            bgcolor: "#457878",
+            bgcolor: "#001b91",
           },
         }}
         onClick={upload}
