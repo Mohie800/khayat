@@ -69,7 +69,7 @@ const Home = () => {
             >
               <Grid item xs={6} md={4}>
                 <img
-                  src={img3}
+                  src={img2}
                   alt="call"
                   className="home-btn-img"
                   onClick={() => navigate("/order")}
@@ -77,7 +77,7 @@ const Home = () => {
               </Grid>
               <Grid item xs={6} md={4}>
                 <img
-                  src={img2}
+                  src={img1}
                   alt="call"
                   className="home-btn-img"
                   onClick={() => navigate("/contacts")}
@@ -85,7 +85,7 @@ const Home = () => {
               </Grid>
               <Grid item xs={12} md={4}>
                 <img
-                  src={img1}
+                  src={img3}
                   alt="call"
                   className="home-btn-img"
                   onClick={() => navigate("/complains")}
