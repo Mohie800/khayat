@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import Features from "../order/Features";
-import { Checkbox, Grid } from "@mui/material";
+import { Checkbox, CircularProgress, Grid } from "@mui/material";
 import { Circle, CircleOutlined } from "@mui/icons-material";
 import "./home.css";
 import Services from "./Services";
@@ -14,7 +14,7 @@ const Home = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const navigate = useNavigate();
 
-  const { data } = useDataFetching();
+  const { data, loading } = useDataFetching();
 
   const images = data.homeBanner.map((item) => item.url);
   const renderCheckBox = () => {
@@ -51,14 +51,29 @@ const Home = () => {
         className="order-bg-img"
         style={{ backgroundImage: `url(${images[currentImage]})` }}
       >
-        <div style={{ display: "flex" }}>{renderCheckBox()}</div>
+        {loading ? (
+          <div
+            style={{
+              width: "100vw",
+              textAlign: "center",
+              height: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <CircularProgress />
+          </div>
+        ) : (
+          <div style={{ display: "flex" }}>{renderCheckBox()}</div>
+        )}
       </div>
       <div className="ser-root">
         <div className="services">
           <div className="ser-text1">خدماتنا</div>
           <Services data={data.services} />
           <div className="home-btn-root">
-            <Grid
+            {/* <Grid
               container
               spacing={1}
               direction="row"
@@ -91,7 +106,7 @@ const Home = () => {
                   onClick={() => navigate("/complains")}
                 />
               </Grid>
-            </Grid>
+            </Grid> */}
           </div>
         </div>
       </div>

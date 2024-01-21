@@ -18,7 +18,8 @@ import { useNavigate } from "react-router-dom";
 import { useDataFetching } from "../../store";
 import XIcon from "@mui/icons-material/X";
 import { Instagram } from "@mui/icons-material";
-import { Tooltip } from "@mui/material";
+import { Suspense } from "react";
+import { Skeleton, Tooltip } from "@mui/material";
 
 const drawerWidth = 240;
 const navItems = [
@@ -63,13 +64,19 @@ function Header() {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Box sx={{ my: 2 }}>
-        <img
-          src={data.logo?.url}
-          alt="logo"
-          style={{
-            maxWidth: "50px",
-          }}
-        />
+        {data.logo?.url ? (
+          <img
+            src={data.logo?.url}
+            alt="logo"
+            style={{
+              maxWidth: "50px",
+            }}
+          />
+        ) : (
+          <div style={{ width: "100%", textAlign: "center" }}>
+            <Skeleton variant="circular" width={40} height={40} />
+          </div>
+        )}
       </Box>
       <Divider />
       <List>
@@ -129,13 +136,19 @@ function Header() {
               }}
               onClick={() => navigate("/")}
             >
-              <img
-                src={data.logo?.url}
-                alt="logo"
-                style={{
-                  maxWidth: "60px",
-                }}
-              />
+              {data.logo?.url ? (
+                <img
+                  src={data.logo?.url}
+                  alt="logo"
+                  style={{
+                    maxWidth: "60px",
+                  }}
+                />
+              ) : (
+                <div style={{ width: "100%", textAlign: "center" }}>
+                  <Skeleton variant="circular" width={40} height={40} />
+                </div>
+              )}
             </Box>
           </Box>
           <Box
@@ -147,7 +160,19 @@ function Header() {
             }}
             onClick={() => navigate("/")}
           >
-            <img src={data.logo?.url} alt="logo" />
+            {data.logo?.url ? (
+              <img
+                src={data.logo?.url}
+                alt="logo"
+                style={{
+                  maxWidth: "60px",
+                }}
+              />
+            ) : (
+              <div style={{ width: "100%", textAlign: "center" }}>
+                <Skeleton variant="circular" width={40} height={40} />
+              </div>
+            )}
           </Box>
           <Box
             sx={{

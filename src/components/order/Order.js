@@ -2,6 +2,7 @@ import {
   Alert,
   Button,
   Checkbox,
+  CircularProgress,
   MenuItem,
   Select,
   Snackbar,
@@ -133,7 +134,22 @@ const Order = () => {
         className="order-bg-img"
         style={{ backgroundImage: `url(${images[currentImage]})` }}
       >
-        <div style={{ display: "flex" }}>{renderCheckBox()}</div>
+        {loading ? (
+          <div
+            style={{
+              width: "100vw",
+              textAlign: "center",
+              height: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <CircularProgress />
+          </div>
+        ) : (
+          <div style={{ display: "flex" }}>{renderCheckBox()}</div>
+        )}
       </div>
       <div className="order-sec2">
         <div className="order-text1">سجل رقمك وبنجي لعندك ناخذ مقاسك</div>

@@ -15,7 +15,15 @@ export const useCityStore = create((set) => ({
 }));
 
 const useDataStore = create((set) => ({
-  data: null,
+  data: {
+    // logo: {},
+    services: [],
+    homeBanner: [],
+    orderBanner: [],
+    reg: {},
+    tax: {},
+    cities: [],
+  },
   loading: true,
   error: null,
   setData: (data) => set((state) => ({ ...state, data })),

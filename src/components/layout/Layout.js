@@ -20,19 +20,19 @@ const Layout = ({ el }) => {
         minHeight: "100vh",
       }}
     >
-      {loading ? (
+      {/* {loading ? (
         <div style={{ width: "100%", textAlign: "center" }}>
           <CircularProgress sx={{ color: "#0D1786" }} />
+        </div> */}
+      {/* ) : ( */}
+      <>
+        <Header />
+        <Box sx={{ mt: 7.5 }}>{el}</Box>
+        <div style={{ alignSelf: "flex-end" }}>
+          <Footer />
         </div>
-      ) : (
-        <>
-          <Header />
-          <Box sx={{ mt: 7.5 }}>{el}</Box>
-          <div style={{ alignSelf: "flex-end" }}>
-            <Footer />
-          </div>
-        </>
-      )}
+      </>
+      {/* )} */}
     </div>
   );
 };
