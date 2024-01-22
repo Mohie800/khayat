@@ -1,8 +1,4 @@
-import {
-  GppGoodOutlined,
-  GroupsRounded,
-  WorkspacePremium,
-} from "@mui/icons-material";
+import { GppGoodOutlined, Group, WorkspacePremium } from "@mui/icons-material";
 import { Box } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import { FaHandHolding } from "react-icons/fa";
@@ -42,7 +38,7 @@ const Features = () => {
             }}
           >
             <div className="feat-circle">
-              <GppGoodOutlined
+              <WorkspacePremium
                 fontSize="inherit"
                 sx={{
                   fontSize: "4rem",
@@ -52,9 +48,10 @@ const Features = () => {
                 }}
               />
             </div>
-            <div className="feat-text1">ضمان مميز</div>
+            <div className="feat-text1">جودة عالية</div>
             <div className="feat-text2">
-              ضمان تعديل على المقاسات وضمان سنة للحشوات والقلابات
+              نحرص دائمًا على تقديم أفضل خدمة وأعلى مستويات الجودة في التصميم
+              والخياطة، لضمان رضاكم التام وإبراز أناقتكم بأبهى طلة
             </div>
           </Box>
         </Grid>
@@ -80,7 +77,7 @@ const Features = () => {
             }}
           >
             <div className="feat-circle">
-              <WorkspacePremium
+              <GppGoodOutlined
                 fontSize="inherit"
                 sx={{
                   fontSize: "4rem",
@@ -90,10 +87,9 @@ const Features = () => {
                 }}
               />
             </div>
-            <div className="feat-text1">جودة عالية</div>
+            <div className="feat-text1">ضمان مميز</div>
             <div className="feat-text2">
-              الأقمشة ذات جودة كورية ويابانية عالية لا يمكن مقارنتها بغيرها لأن
-              الجودة هي أساس وقلب كل الخدمات التي نقدمها
+              ضمان فريد على جودة الاقمشة ،وضمان على التعديل في المقاسات
             </div>
           </Box>
         </Grid>
@@ -118,7 +114,7 @@ const Features = () => {
             }}
           >
             <div className="feat-circle" style={{ flexDirection: "column" }}>
-              <GroupsRounded
+              <Group
                 fontSize="inherit"
                 sx={{
                   fontSize: "2rem",
