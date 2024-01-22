@@ -60,7 +60,6 @@ const ReturnPolicy = () => {
             sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}
           >
             في حالة وجود مشكلة في المنتج يجب على العميل رفع طلب شكوى على الموقع
-            من خلال الرابط التالي: https://khabna.com/complaints
           </Typography>
           <Typography
             sx={{ fontFamily: "pun", color: "#0D1786", marginBlock: 1 }}

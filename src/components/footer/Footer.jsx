@@ -10,9 +10,14 @@ const Footer = () => {
   return (
     <div className="footer-root">
       <div className="footer-cont">
-        <div className="footer-row1" style={{ marginInline: 20 }}>
+        {/* <div className="footer-row1" style={{ marginInline: 20 }}>
           رقم السجل التجاري ({data.reg.number}) رقم التسجيل الضريبي (
           {data.tax.number}) شهادة توثيق التجارة الالكترونية ({data.reg.authNo})
+          <img src={pay} alt="pay" style={{ height: 40 }} />
+        </div> */}
+        <div className="footer-row1" style={{ marginInline: 20 }}>
+          رقم السجل التجاري ({data.reg.number}) شهادة توثيق التجارة الالكترونية
+          ({data.reg.authNo})
           <img src={pay} alt="pay" style={{ height: 40 }} />
         </div>
         <div className="footer-row1">
@@ -41,13 +46,13 @@ const Footer = () => {
                 >
                   شروط الأستخدام
                 </div>
-                <div
+                {/* <div
                   id="menu-item-453"
                   className="footer-btn"
                   onClick={() => navigate("/tax-certificate")}
                 >
                   الشهادة الضريبية
-                </div>
+                </div> */}
                 <div
                   id="menu-item-454"
                   className="footer-btn"
