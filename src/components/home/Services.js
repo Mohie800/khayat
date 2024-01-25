@@ -1,7 +1,4 @@
 import { Grid, Typography } from "@mui/material";
-import ser1 from "../../assets/ser1.png";
-import ser2 from "../../assets/ser2.webp";
-import ser3 from "../../assets/ser3.webp";
 
 const Services = ({ data = [] }) => {
   // const data = [

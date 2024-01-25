@@ -130,7 +130,7 @@ const Order = () => {
           <div className="order-text2">تم إرسال الطلب بنجاح</div>
         </Alert>
       </Snackbar>
-      <div
+      {/* <div
         className="order-bg-img"
         style={{ backgroundImage: `url(${images[currentImage]})` }}
       >
@@ -150,7 +150,7 @@ const Order = () => {
         ) : (
           <div style={{ display: "flex" }}>{renderCheckBox()}</div>
         )}
-      </div>
+      </div> */}
       <div className="order-sec2">
         <div className="order-text1">سجل رقمك وبنجي لعندك ناخذ مقاسك</div>
       </div>
@@ -172,7 +172,6 @@ const Order = () => {
                 },
               }}
               fullWidth
-              placeholder="51 234 5678"
               type="number"
               // value="51 234 5678"
               onChange={(e) => setPhone(e.target.value)}
@@ -185,6 +184,7 @@ const Order = () => {
                 alignItems: "center",
                 ".MuiSelect-outlined": {
                   display: "flex",
+                  width: "50px",
                 },
               }}
               className="sel-phone"
@@ -239,7 +239,7 @@ const Order = () => {
           </LoadingButton>
         </div>
       </div>
-      <Features />
+      {/* <Features /> */}
       {/* <Footer /> */}
     </div>
   );

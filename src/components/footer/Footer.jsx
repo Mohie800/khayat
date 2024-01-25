@@ -39,13 +39,13 @@ const Footer = () => {
                 >
                   طرق الدفع
                 </div>
-                <div
+                {/* <div
                   id="menu-item-452"
                   className="footer-btn"
                   onClick={() => navigate("/terms")}
                 >
                   شروط الأستخدام
-                </div>
+                </div> */}
                 {/* <div
                   id="menu-item-453"
                   className="footer-btn"

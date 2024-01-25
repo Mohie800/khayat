@@ -4,11 +4,11 @@ import { Checkbox, CircularProgress, Grid } from "@mui/material";
 import { Circle, CircleOutlined } from "@mui/icons-material";
 import "./home.css";
 import Services from "./Services";
-import img1 from "../../assets/callus.png";
-import img3 from "../../assets/Untitled design (1).png";
-import img2 from "../../assets/Untitled design (2).png";
+import img1 from "../../assets/سوشيال ميديا فصب ثوبك-01.jpg";
+import img2 from "../../assets/سوشيال ميديا فصب ثوبك_Artboard 2.jpg";
 import { useNavigate } from "react-router-dom";
 import { useDataFetching } from "../../store";
+import Order from "../order/Order";
 
 const Home = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -16,7 +16,8 @@ const Home = () => {
 
   const { data, loading } = useDataFetching();
 
-  const images = data.homeBanner.map((item) => item.url);
+  // const images = data.homeBanner.map((item) => item.url);
+  const images = [img1, img2];
   const renderCheckBox = () => {
     return data.homeBanner.map((item, i) => {
       return (
@@ -49,9 +50,9 @@ const Home = () => {
       {/* <Header /> */}
       <div
         className="order-bg-img"
-        style={{ backgroundImage: `url(${images[currentImage]})` }}
+        style={{ backgroundImage: `url("${images[currentImage]}")` }}
       >
-        {loading ? (
+        {/* {loading ? (
           <div
             style={{
               width: "100vw",
@@ -64,9 +65,9 @@ const Home = () => {
           >
             <CircularProgress />
           </div>
-        ) : (
-          <div style={{ display: "flex" }}>{renderCheckBox()}</div>
-        )}
+        ) : ( */}
+        <div style={{ display: "flex" }}>{renderCheckBox()}</div>
+        {/* )} */}
       </div>
       <div className="ser-root">
         <div className="services">
@@ -110,15 +111,16 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Order />
 
       <Features />
-      <div className="home-footer">
+      {/* <div className="home-footer">
         <img
           src={data.logo?.homePic}
           alt="footer"
           className="home-footer-img"
         />
-      </div>
+      </div> */}
       {/* <Footer /> */}
     </div>
   );

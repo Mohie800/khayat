@@ -24,10 +24,9 @@ import { Skeleton, Tooltip } from "@mui/material";
 const drawerWidth = 240;
 const navItems = [
   { name: "الرئيسية", link: "/" },
-  { name: "طلب جديد", link: "/order" },
   { name: "اتصل بنا", link: "/contacts" },
   { name: "الشكاوى والتعديل", link: "/complains" },
-  { name: "التوظيف", link: "/employment" },
+  // { name: "التوظيف", link: "/employment" },
 ];
 
 function Header() {
