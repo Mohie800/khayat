@@ -113,9 +113,9 @@ const Order = () => {
     return () => clearInterval(interval);
   }, [currentImage]);
 
-  useEffect(() => {
-    ref.current.scrollIntoView({ behavior: "smooth" });
-  }, []);
+  // useEffect(() => {
+  //   ref.current.scrollIntoView({ behavior: "smooth" });
+  // }, []);
 
   return (
     <div>

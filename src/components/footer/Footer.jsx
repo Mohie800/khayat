@@ -88,7 +88,7 @@ const Footer = () => {
               className="copyright-footer"
               style={{ ":hover": { color: "#1f1f1f" }, marginBottom: 20 }}
             >
-              Copyright 2024 ©<strong>khabna</strong>
+              Copyright 2024 ©<strong>khabnah</strong>
             </div>
           </div>
         </div>
