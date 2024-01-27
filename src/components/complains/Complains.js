@@ -193,9 +193,9 @@ const Complains = () => {
         size="small"
         onChange={(e) => setDescription(e.target.value)}
       />
-      <div className="order-text2" style={{ marginTop: "20px" }}>
+      {/* <div className="order-text2" style={{ marginTop: "20px" }}>
         *جميع الشكاوى تخضع لرقابة مباشرة من الإدارة العامة
-      </div>
+      </div> */}
       <LoadingButton
         loading={loading}
         variant="contained"
@@ -205,6 +205,7 @@ const Complains = () => {
           ":hover": {
             bgcolor: "#001b91",
           },
+          mt: 3,
         }}
         onClick={sendOrder}
       >

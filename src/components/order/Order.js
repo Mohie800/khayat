@@ -159,6 +159,7 @@ const Order = () => {
           <div className="order-text2">الجوال :</div>
           <div style={{ display: "flex" }}>
             <TextField
+              size="small"
               sx={{
                 ".MuiOutlinedInput-root": {
                   fieldset: {
@@ -177,6 +178,7 @@ const Order = () => {
               onChange={(e) => setPhone(e.target.value)}
             />
             <Select
+              size="small"
               sx={{
                 fontFamily: "inherit",
                 direction: "rtl",
@@ -210,6 +212,7 @@ const Order = () => {
         <div className="order-f1">
           <div className="order-text2">المدينة :</div>
           <Select
+            size="small"
             sx={{ fontFamily: "pun-bold", direction: "rtl", bgcolor: "#eee" }}
             value={city}
             onChange={handleChange}
